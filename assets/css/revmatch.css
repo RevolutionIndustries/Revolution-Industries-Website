@@ -1,0 +1,319 @@
+html,body,p,div,img,h1,h2,h3,h4,li,ul,ol,dl,dd,dt,form,table,td,tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+html, body {
+	height:100%;
+	font-size:10pt;
+	font-family: verdana, sans-serif;
+	color:#FFF;	
+	background:url(../images/cfbg_left.jpg) #383838 repeat-x;
+	text-align:center;
+}
+body {
+	min-width: 724px;/*** Content Minmum Width, not used by IE5/6, or early versions of Safari ***/
+} 
+
+#container-right h1{
+	border-bottom:1px solid #202020;
+	font-size:2em;
+	line-height:1.1em;
+	background-color:inherit;
+	clear:left;
+	font-family: Georgia,serif;
+	font-size: 20px;
+	font-weight:normal;
+	margin:0 5px 0.5em;
+	padding:0.5em 0 0;	
+}
+
+#container-right h2{
+	border-bottom:1px dashed #202020;
+	line-height:1.1em;
+	margin-left:3px;
+	margin-right:10px;
+	font-weight:normal;
+	margin:0 5px 0.5em;
+	padding:0.5em 0 0;
+	background-color:inherit;
+	clear:left;
+	font-family:Georgia,serif;
+	color:#db6a10;
+	font-size:15px;
+}
+
+#container-right p{
+	line-height:150%;
+	margin:0 0 1em;
+	color:#999999;
+	font-family:Verdana,sans-serif;
+	font-size:12px;
+}
+
+#container-right ul{
+	margin-left:15px;
+	color:#999999;
+	font-family:Verdana,sans-serif;
+	font-size:11px;
+}
+
+#fullheightcontainer {
+	position: relative; /*** Let's be nice to IE ***/
+	width: 724px; /*** Content Width ***/
+	display: table; /*** For non-IE browsers ***/
+	height: 100%;
+	margin-bottom: -88px; /*** NEGATIVE TOTAL Height of Footer Rows ***/
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	background:url(../images/fullPageBG.png) repeat-y;
+}
+
+#wrapper {
+	display: table-cell; /*** For non-IE browsers ***/
+	position: relative; /*** Let's be nice to IE ***/
+
+}
+
+#outer {
+	position: relative;
+	height: 100%;
+}
+
+#float-wrap {
+	margin-left:44px;
+	width: 636px;
+	float: left;
+	display: inline;
+}
+
+#clearheaderright {
+	height: 102px; /*** TOTAL Height of Header Rows ***/
+	overflow: hidden;
+}
+
+#clearfooterright {
+	height: 88px; /*** TOTAL Height of Footer Rows ***/
+	overflow: hidden;
+}
+
+
+#right {
+	position: relative; /* fix for IE */
+	width: 100%;
+	float:right;
+	height: 100%;
+	display:table;
+}
+
+#container-right{
+	background:url(../images/menuShadowTrans.png) top no-repeat;
+	font-size:8pt;
+	font-family: verdana, sans-serif;
+	padding-left:5px;
+	padding-top:20px;
+	padding-right:5px;
+}
+
+#footer {
+	z-index: 1;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	width:100%;
+	text-align: center;
+	height: 88px;
+	background:url(../images/footerBarBG.png) bottom repeat-x;
+	overflow: hidden;	
+}
+
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+
+}
+
+#header-inner {
+	width:100%;
+	min-width: 724px; /*** Minimum Content Width ***/
+}
+
+#subheader1 {
+	margin: 0px auto;
+	width:741px;
+	height:70px;
+	padding:0px;
+	background:url(../images/header.png) no-repeat;
+}
+
+#subheader2 {
+	margin: 0px auto;
+	width:635px;
+	height:32px;
+	padding:0px;
+}
+
+
+.topMenu{
+	width:635px;
+	height:32px;
+	margin:0px;
+	padding: 0px;
+	position:relative;
+	background:url(../images/menubar.png) no-repeat;
+}
+.topMenu li{
+    margin: 0px;
+	padding: 0px;
+	list-style: none;
+    position: absolute;
+	top: 0px;
+}
+.topMenu li, .topMenu a{
+    height: 32px;
+	display: block;
+	text-indent:-3000px; /*moves text out of the way*/
+	overflow:hidden;
+	text-decoration:none;
+}
+
+#topMenuHome{
+	left: 0px; width: 35px;	
+}
+#topMenuHome a:hover{
+	background:transparent url(../images/menubar.png) no-repeat scroll 0px -32px;
+}
+#topMenuServices{
+	left: 36px; width: 132px;
+}
+#topMenuServices a:hover{
+	background:transparent url(../images/menubar.png) no-repeat scroll -36px -32px;
+}
+#topMenuPortfolio{
+	left: 168px; width: 150px;
+}
+#topMenuPortfolio a:hover{
+	background:transparent url(../images/menubar.png) no-repeat scroll -168px -32px;
+}
+#topMenuGarage{
+	left: 318px; width: 151px;
+}
+#topMenuGarage a:hover{
+	background:transparent url(../images/menubar.png) no-repeat scroll -318px -32px;
+}
+#topMenuContact{
+	left: 469px; width: 129px;
+}
+#topMenuContact a:hover{
+	background:transparent url(../images/menubar.png) no-repeat scroll -469px -32px;
+
+}
+
+#footer-container{
+	font-size:10pt;
+	width:100%;
+	margin:0px auto;
+}
+
+#subfooter1{
+	margin: 0px auto;
+	background: url(../images/footerBar.png) no-repeat;
+    height: 88px;
+	width:702px;
+	padding-right:26px;
+}
+
+#fuelInjectedMedia{
+	margin: 0 auto;
+	width: 416px;
+	height: 76px;
+	background:url(../images/fuelInjectedMediaTrans.png) no-repeat;
+	margin:-20px auto 0;
+}
+#triPaneHeader{
+	float:left;
+	width: 633px;
+	height: 127px;
+	background:url(../images/3paneTopTrans.png) no-repeat;
+}
+#triPaneCenter{
+	font-size:8pt;
+	font-family: verdana, sans-serif;
+	color:#b4b4b4;
+	text-align: justify;
+	float:left;
+	width: 633px;
+	background:url(../images/3paneMiddleTrans.png) repeat-y;
+}
+#triPaneFooter{
+	float:left;
+	width: 633px;
+	height: 30px;
+	background:url(../images/3paneBottomTrans.png) no-repeat;
+}
+#triPaneLeft{
+	padding:5px;
+	margin-left:9px;
+	width:185px;
+	float:left;	
+}
+#triPaneMid{
+	padding:5px;
+	margin-left:14px;
+	width:185px;
+	float:left;	
+}
+#triPaneRight{
+	padding:5px;
+	margin-left:14px;
+	width:185px;
+	float:left;	
+}
+
+#container-right a:visited{
+	color:#db6a10;
+}
+#container-right a:link{
+	color:#db6a10;
+}
+#container-right a:hover{
+	color:#dbac16;
+}
+
+.tweet {
+	font-family: Georgia, serif;
+	font-size: 120%;
+	color: #085258;
+}
+.tweet .tweet_list {
+	-webkit-border-radius: .5em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #222222;
+	margin-right:20px;
+}
+.tweet .tweet_list li {
+	overflow: auto;
+	padding: .5em;
+}
+.tweet .tweet_list li a {
+	color: #0C717A;
+}
+.tweet .tweet_list .tweet_even {
+	background-color: #252525; 
+}
+.tweet .tweet_list .tweet_avatar {
+	padding-right: .5em;
+	float: left;
+}
+.tweet .tweet_list .tweet_avatar img {
+	vertical-align: middle;
+}

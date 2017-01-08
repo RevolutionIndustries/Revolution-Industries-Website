@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- 
+ ////////  //////  //   //  //////   ///   //
+      ///  //      //   //    //     ////  //
+ ////////  ////     // //     //     // // //
+   ///     //       // //     //     //  ////
+     ///   //////    //     //////   //   ///
+ Design > Code > Drive     http://rev-in.com/
+-->
+<head>
+  <title{{ page.title }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <meta name="author" content="{{ site.author.name }}">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+  <link href="/assets/css/revmatch.css" rel="stylesheet" type="text/css" media="screen" >
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Le fav and touch icons -->
+<!-- Update these with your own images
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+-->
+</head>
+<body>
+  <div id="fullheightcontainer">
+    <div id="wrapper">
+      <div id="outer" class="floatcontainer">
+        <div id="float-wrap" class="floatcontainer">
+          <div id="right">
+            <div id="clearheaderright"></div>
+            <div id="container-right">
+              {{ content }}
+            </div>
+            <div id="clearfooterright"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="footer-container">
+      <div id="subfooter1"></div>
+    </div>
+  </div>
+  <div id="header">
+    <div id="header-inner">
+      <div id="subheader1"></div>
+      <div id="subheader2">
+        <ul class="topMenu">
+          <li id="topMenuHome"><a href="index.html" title="Home">Home</a></li>
+          <li id="topMenuServices"><a href="services.html" title="More then just an oil change.">Services</a></li>
+          <li id="topMenuPortfolio"><a href="portfolio.html" title="Some of our favorite projects.">Portfolio</a></li>
+          <li id="topMenuGarage"><a href="garage.html" title="Check out whats laying around in the shop.">The Garage</a></li>
+          <li id="topMenuContact"><a href="contact.html" title="We may not answer, unless you sound hot.">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% include JB/analytics %}
+</body>
+</html>
